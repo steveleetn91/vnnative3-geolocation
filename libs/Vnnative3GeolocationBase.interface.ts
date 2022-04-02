@@ -1,13 +1,13 @@
 export interface Vnnative3GeolocationResponse {
-    readonly coords: GeolocationCoordinates;
-    readonly timestamp: EpochTimeStamp;
+    coords: GeolocationCoordinates;
+    timestamp: EpochTimeStamp;
 }
 export interface Vnnative3GeolocationResponseError {
-    readonly code: number;
-    readonly message: string;
-    readonly PERMISSION_DENIED: number;
-    readonly POSITION_UNAVAILABLE: number;
-    readonly TIMEOUT: number;
+    code: number;
+    message: string;
+    PERMISSION_DENIED: number;
+    POSITION_UNAVAILABLE: number;
+    TIMEOUT: number;
 }
 
 export interface Vnnative3GoogleMapServiceInterface {

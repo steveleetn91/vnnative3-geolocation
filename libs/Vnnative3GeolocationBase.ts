@@ -28,10 +28,9 @@ class Vnnative3GoogleMapService implements Vnnative3GoogleMapServiceInterface {
 
 export class Vnnative3GeolocationBase implements Vnnative3GeolocationBaseInterface {
     useGoogleMap(googleMapWebKey: string, canvas_id: string): Vnnative3GoogleMapServiceInterface {
-        const win: any = window;
         const script: HTMLScriptElement = document.createElement("script");
         script.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=" + googleMapWebKey);
-        win.body.appendChild(script);
+        document.body.appendChild(script);
         return new Vnnative3GoogleMapService(canvas_id);
     }
     getCurrentPosition(success: Function, error: Function): void {
