@@ -1,0 +1,31 @@
+{
+  "name": "vnnative3-geolocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveleetn91/vnnative3-geolocation.git"
+  },
+  "keywords": [
+    "vnnative3",
+    "geolocation"
+  ],
+  "author": "stevelee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveleetn91/vnnative3-geolocation/issues"
+  },
+  "homepage": "https://github.com/steveleetn91/vnnative3-geolocation#readme",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.48.3"
+  }
+}
