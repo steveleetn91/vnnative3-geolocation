@@ -2,6 +2,10 @@
 This is a plugin support Geolocation for Vn Native 3. Default support for `Web` and `Software`, and if you wanna
 support for `Android` and `iOS`, so need install more cordova plugin.
 
+## Support Android and iOS
+
+    cordova plugin add cordova-plugin-geolocation
+
 ## Setup HTML 
 
     <div id="map"></div>
