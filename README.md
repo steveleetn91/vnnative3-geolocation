@@ -53,6 +53,7 @@ Next step go to `./node_modules/vnnative3-geolocation` and run :
     npm install
 
 Next 
+
     npm run build    
 
 ## Get current position ? 
