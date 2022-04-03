@@ -11,8 +11,12 @@ support for `Android` and `iOS`, so need install more cordova plugin.
     <div id="map"></div>
 
 ## Quick start 
+        // import 
+        import Vnnative3Geolocation from 'vnnative3-geolocation';
+        import { Vnnative3GeolocationResponse, Vnnative3GeolocationResponseError, Vnnative3GoogleMapServiceInterface } from 'vnnative3-geolocation/dist/libs/Vnnative3GeolocationBase.interface';
+        // use 
 
-    let position : Vnnative3GeolocationResponse;
+        let position : Vnnative3GeolocationResponse;
         Vnnative3Geolocation.getCurrentPosition((resp : Vnnative3GeolocationResponse) => {
             position = resp;
             const GoogleMapWebServiceKey : string = "";
