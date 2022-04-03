@@ -48,6 +48,13 @@ support for `Android` and `iOS`, so need install more cordova plugin.
 
     npm i vnnative3-geolocation
 
+Next step go to `./node_modules/vnnative3-geolocation` and run :
+
+    npm install
+
+Next 
+    npm run build    
+
 ## Get current position ? 
 
     Vnnative3Geolocation.getCurrentPosition(successCallback,errorCallback)
