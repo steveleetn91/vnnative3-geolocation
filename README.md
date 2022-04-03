@@ -2,6 +2,19 @@
 This is a plugin support Geolocation for Vn Native 3. Default support for `Web` and `Software`, and if you wanna
 support for `Android` and `iOS`, so need install more cordova plugin.
 
+## How to install ? 
+
+    npm i vnnative3-geolocation
+
+Next step go to `./node_modules/vnnative3-geolocation` and run :
+
+    npm install
+
+Next 
+
+    npm run build    
+
+
 ## Support Android and iOS
 
     cordova plugin add cordova-plugin-geolocation
@@ -43,18 +56,6 @@ support for `Android` and `iOS`, so need install more cordova plugin.
         },(resp : Vnnative3GeolocationResponseError) => { 
 
         });
-
-## How to install ? 
-
-    npm i vnnative3-geolocation
-
-Next step go to `./node_modules/vnnative3-geolocation` and run :
-
-    npm install
-
-Next 
-
-    npm run build    
 
 ## Get current position ? 
 
