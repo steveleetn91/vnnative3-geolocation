@@ -27,11 +27,16 @@ class Vnnative3GoogleMapService implements Vnnative3GoogleMapServiceInterface {
 }
 
 export class Vnnative3GeolocationBase implements Vnnative3GeolocationBaseInterface {
-    useGoogleMap(googleMapWebKey: string, canvas_id: string): Vnnative3GoogleMapServiceInterface {
+    useGoogleMap(googleMapWebKey: string, canvas_id: string,callback : Function): void {
         const script: HTMLScriptElement = document.createElement("script");
         script.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=" + googleMapWebKey);
-        document.body.appendChild(script);
-        return new Vnnative3GoogleMapService(canvas_id);
+        document.head.appendChild(script);
+        let check = setInterval(() => {
+            if(google) {
+                clearInterval(check);
+                return callback(new Vnnative3GoogleMapService(canvas_id));
+            }
+        },500);
     }
     getCurrentPosition(success: Function, error: Function): void {
         const successfully: PositionCallback = (res: Vnnative3GeolocationResponse): Function => {
